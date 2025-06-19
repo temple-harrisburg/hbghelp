@@ -1,0 +1,1 @@
+The **Documentation** folder contains information and guides on systems that are only relevant to IT staff.
