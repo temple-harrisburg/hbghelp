@@ -2,7 +2,7 @@
 tags:
   - windows11
   - network
-published: true
+public: true
 ---
 Temple computers are configured to use a proxy server by default. The Temple proxy server helps anonymize your internet traffic and protect your device from potentially malicious websites, but in many cases it blocks access to websites you need for work.
 

@@ -4,7 +4,7 @@ tags:
   - temple
   - access
   - mobile
-published: true
+public: true
 ---
 With the SAP Concur Mobile app, you're able to create expense reports and upload receipts directly from your smart phone. Follow these steps to sign in to the Concur mobile app.
 

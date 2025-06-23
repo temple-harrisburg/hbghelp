@@ -2,7 +2,7 @@
 tags:
   - temple
   - internal
-published: true
+public: true
 ---
 Devices registered in TUPortal are automatically enrolled in TUAlerts. TUAlert is an opt-out system.
 

@@ -4,7 +4,7 @@ tags:
   - hdmi
   - internal
   - gefen
-published: true
+public: true
 ---
 The Gefen EXT-UHD6000A-44 is a 4x4 HDMI matrix.
 

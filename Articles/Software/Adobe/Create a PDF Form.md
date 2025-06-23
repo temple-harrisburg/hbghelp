@@ -4,7 +4,7 @@ tags:
   - acrobat
   - pdf
   - forms
-published: true
+public: true
 ---
 There are many situations where you need a standardized form where recipients can input information digitally instead of on paper. PDF forms are perfect for these scenarios.
 

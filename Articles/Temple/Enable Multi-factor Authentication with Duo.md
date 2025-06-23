@@ -6,7 +6,7 @@ tags:
   - phones
   - access
   - security
-published: true
+public: true
 ---
 Multi-factor authentication (MFA) is an extra layer of security over your AccessNet account. Temple requires you to enable MFA on a specified device to log in to TUPortal and other Temple systems.
 
