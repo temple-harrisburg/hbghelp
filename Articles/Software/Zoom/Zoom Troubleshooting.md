@@ -2,7 +2,7 @@
 tags:
   - zoom
   - software
-published: true
+public: true
 ---
 Solutions for visual freezing, glitches and tearing during Zoom calls.
 

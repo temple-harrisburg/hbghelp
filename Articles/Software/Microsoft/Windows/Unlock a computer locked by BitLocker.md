@@ -3,7 +3,7 @@ tags:
   - temple
   - security
   - bitlocker
-published: true
+public: true
 ---
 BitLocker is a security feature in Windows that prevents unauthorized access to data on a device. BitLocker encrypts your computer's drive. When you log in with your Temple Account, the drive is decrypted with a key associated with your account so you can access it. If your laptop is lost or stolen, no one will be able to decrypt the drive without the key associated with your account, which protects any sensitive or confidential data you may have on the device from malicious actors.
 

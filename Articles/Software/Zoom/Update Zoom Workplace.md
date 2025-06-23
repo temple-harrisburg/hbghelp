@@ -3,7 +3,7 @@ tags:
   - zoom
   - software
   - update
-published: true
+public: true
 ---
 ### Check your Zoom Workplace version
 

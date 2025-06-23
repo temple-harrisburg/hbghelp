@@ -2,7 +2,7 @@
 tags:
   - temple
   - internal
-published: false
+public: false
 ---
 Temple Harrisburg's main site for disseminating information on course offerings, rental info, events and news is at [universitycollege.temple.edu/harrisburg](https:\\universitycollege.temple.edu/harrisburg). This site is considered a **microsite** of the universitycollege.temple.edu domain. Its CSS stylings, CMS framework, Event and News information, and other policies are managed by the UC site administration, so TUH IT staff have limited control over
 

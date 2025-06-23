@@ -4,7 +4,7 @@ tags:
   - resources
   - public
   - media
-published: true
+public: true
 ---
 Creative works like art, photographs, text, music, and logos are subject to copyright terms and can't be used for free. When searching for stock images and media, you should search for media that is licensed with a Creative Commons license or is part of the Public Domain.
 

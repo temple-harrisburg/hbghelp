@@ -2,7 +2,7 @@
 tags:
   - accessnet
   - temple
-published: true
+public: true
 ---
 If you've forgotten your password or have left and been rehired by Temple, you may need to reset your AccessNet account.
 

@@ -7,7 +7,7 @@ tags:
   - network
   - hardware
   - software
-published: false
+public: false
 ---
 TUH's operations manager requires special software for financial operations. This software can only run successfully on a workstation that has a whitelisted hostname and static IP address. Only a workstation with the whitelisted IP and hostname can install the finance software.
 

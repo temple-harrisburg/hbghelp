@@ -2,7 +2,7 @@
 tags:
   - temple
   - internal
-published: false
+public: false
 ---
 # Creating News Items
 

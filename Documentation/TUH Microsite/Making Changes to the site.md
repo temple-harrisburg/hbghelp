@@ -3,7 +3,7 @@ tags:
   - microsite
   - tuh
   - temple
-published: true
+public: true
 ---
 To request a change to be made to the Temple Harrisburg site, submit a request through the [HBG Website Request form](https://forms.office.com/Pages/ResponsePage.aspx?id=74FucSK1c0SOMRC9Asz25YQCwUylszVFt_4oEetpIpZUOFdVWFhKRFgyOU5ZQ0tSV0xHMktSRTVXTy4u).
 

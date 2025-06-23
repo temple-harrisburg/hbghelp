@@ -4,7 +4,7 @@ tags:
   - internet
   - windows
   - windows11
-published: true
+public: true
 ---
 ### What is a DNS server?
 

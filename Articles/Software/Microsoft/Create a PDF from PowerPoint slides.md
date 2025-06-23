@@ -6,7 +6,7 @@ tags:
   - word
   - acrobat
   - public
-published: true
+public: true
 ---
 ### Print-to-PDF with “Microsoft Print to PDF” or “Adobe PDF”
 

@@ -4,7 +4,7 @@ tags:
   - windows11
   - update
   - software
-published: true
+public: true
 ---
 **Check for Updates**
 
