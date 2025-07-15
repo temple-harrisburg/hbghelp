@@ -15,7 +15,8 @@ With the SAP Concur Mobile app, you're able to create expense reports and upload
 3. In the top right corner of your Concur dashboard, click on the "User" icon
 4. Click on "Profile Settings"
 
-![](https://sites.temple.edu/hbghelp/files/2025/03/concur1-1024x257.png)
+![](/assets/images/concur1-1024x257.png)
+![](/assets/images/concur1-1024x257.png)
 
 5. Click on "Concur Mobile Registration"
 

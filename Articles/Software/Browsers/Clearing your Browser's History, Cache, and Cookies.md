@@ -7,7 +7,8 @@ This article explains how to delete browsing data in [Google Chrome](#chrome), [
 1. Click the vertical ellipses button in the top right of the browser.
 2. Select **Settings**
 
-![](https://sites.temple.edu/hbghelp/files/2024/01/image.png)
+![](/assets/images/image.png)
+![](/assets/images/image.png)
 
 3. Select **Privacy and Security**
 4. Click **Clear browsing data**

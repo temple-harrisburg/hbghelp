@@ -37,7 +37,8 @@ Legacy software installers are available in the [Harrisburg SharePoint](https://
 1. Run the Epson EPOS 1.12 Installer
 2. Agree to EULA and select "User" setup method
 
-![](https://sites.temple.edu/hbghelp/files/2024/12/user.png)
+![](/assets/images/user.png)
+![](/assets/images/user.png)
 
 3. Select "USB" as the communication method.
 4. Finish installation

@@ -18,7 +18,8 @@ If you've forgotten your password or have left and been rehired by Temple, you m
 1. Go to [accounts.temple.edu](https://accounts.temple.edu/)
 2. Select "I cannot log in" under the 'Need Help?' sidebar
 
-![](https://sites.temple.edu/hbghelp/files/2024/04/image-3.png)
+![](/assets/images/image-3.png)
+![](/assets/images/image-3.png)
 
 3. Select "Yes" under the question that reads "Do you know your AccessNet username?"
 

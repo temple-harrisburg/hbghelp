@@ -15,7 +15,8 @@ public: true
 3. Select “Handouts (2 slides per page)” in the format dropdown menu.
 4. Click “Print”
 
-![Annotated screenshot of the Microsoft PowerPoint print options.](https://sites.temple.edu/hbghelp/files/2025/01/image-4.png)
+![Annotated screenshot of the Microsoft PowerPoint print options.](/assets/images/image-4.png)
+![Annotated screenshot of the Microsoft PowerPoint print options.](/assets/images/image-4.png)
 
 ### Export PDF/XPS
 

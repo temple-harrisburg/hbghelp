@@ -21,7 +21,8 @@ Issues with your configured DNS server may cause certain websites or services to
 2. Go to "Network & Internet"
 3. Review the IP address next to "IPv4 DNS servers"
 
-![](https://sites.temple.edu/hbghelp/files/2024/12/image-1024x796.png)
+![](/assets/images/image-1024x796.png)
+![](/assets/images/image-1024x796.png)
 
 4. Next to "DNS server assignment", click "Edit"
 5. Select "Manual" from the dropdown list
