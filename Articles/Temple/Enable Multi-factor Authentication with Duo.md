@@ -17,11 +17,10 @@ Multi-factor authentication (MFA) is an extra layer of security over your Access
 2. Select **Addresses and Phones** under the Personal Information heading.
 
 ![](/assets/images/image-1.png)
-![](/assets/images/image-1.png)
 
 3. Select **Manage** under the phone you want to enroll in MFA.
 
-![](https://sites.temple.edu/hbghelp/files/2024/03/image-3.png)
+![](/assets/images/image-3.png)
 
 4. Toggle the switch next to your device's title or select "Reinstall Duo App"
 

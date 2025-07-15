@@ -14,6 +14,5 @@ public: true
 4. Download and install any updates that show up.
 
 ![](/assets/images/image-1.jpg)
-![](/assets/images/image-1.jpg)
 
-![](https://sites.temple.edu/hbghelp/files/2025/04/image.jpg)
+![](/assets/images/image.jpg)

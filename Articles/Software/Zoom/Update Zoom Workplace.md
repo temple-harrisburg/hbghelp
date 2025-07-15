@@ -14,9 +14,8 @@ public: true
 5. A popup window will appear displaying the current version of Zoom Workplace you have installed.
 
 ![](/assets/images/image-1.png)
-![](/assets/images/image-1.png)
 
-![](https://sites.temple.edu/hbghelp/files/2025/04/image-2.png)
+![](/assets/images/image-2.png)
 
 ### Update Zoom Workplace
 

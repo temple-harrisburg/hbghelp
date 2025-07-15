@@ -15,13 +15,12 @@ However, BitLocker can also be triggered under certain conditions, like when maj
 2. Go to "Manage Devices"
 
 ![](/assets/images/image-3.png)
-![](/assets/images/image-3.png)
 
 3. Find your device by its hostname. Click on the row to expand it.
 4. Confirm that the "Device object ID" matches the "Recovery key ID (to identify your key)" on the BitLocker Recovery Screen
 5. Click "View Bitlocker Keys"
 
-![](https://sites.temple.edu/hbghelp/files/2024/10/image-4.png)
+![](/assets/images/image-4.png)
 
 6. Click "Show recovery key"
 

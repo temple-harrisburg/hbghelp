@@ -26,4 +26,3 @@ Requests for the use of personal, vacation, and sick leave allotments should be 
 ## Workflow
 
 ![](/assets/images/leave-request-diagram.png)
-![](/assets/images/leave-request-diagram.png)

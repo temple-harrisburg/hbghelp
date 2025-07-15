@@ -16,7 +16,6 @@ public: true
 4. Click “Print”
 
 ![Annotated screenshot of the Microsoft PowerPoint print options.](/assets/images/image-4.png)
-![Annotated screenshot of the Microsoft PowerPoint print options.](/assets/images/image-4.png)
 
 ### Export PDF/XPS
 
@@ -24,7 +23,7 @@ public: true
 2. Click “Create PDF/XPS Document”
 3. Click “Create “PDF/XPS”
 
-![Annotated screenshot of the Microsoft PowerPoint export options.](https://sites.temple.edu/hbghelp/files/2025/01/image.png)
+![Annotated screenshot of the Microsoft PowerPoint export options.](/assets/images/image.png)
 
 4. In the file explorer dialog, select “Options…”
 

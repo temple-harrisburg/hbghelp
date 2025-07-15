@@ -13,6 +13,5 @@ Temple computers are configured to use a proxy server by default. The Temple pro
 3. If a proxy server in configured, disable it.
 
 ![](/assets/images/image.png)
-![](/assets/images/image.png)
 
-![](https://sites.temple.edu/hbghelp/files/2024/09/image-1-1024x916.png)
+![](/assets/images/image-1-1024x916.png)

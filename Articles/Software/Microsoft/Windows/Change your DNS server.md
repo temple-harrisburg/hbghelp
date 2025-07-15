@@ -22,7 +22,6 @@ Issues with your configured DNS server may cause certain websites or services to
 3. Review the IP address next to "IPv4 DNS servers"
 
 ![](/assets/images/image-1024x796.png)
-![](/assets/images/image-1024x796.png)
 
 4. Next to "DNS server assignment", click "Edit"
 5. Select "Manual" from the dropdown list
@@ -30,7 +29,7 @@ Issues with your configured DNS server may cause certain websites or services to
 7. Enter the IPv4 address of an accessible DNS server. See [Public DNS servers](#public-dns-servers) below.
 8. Click "Save"
 
-![](https://sites.temple.edu/hbghelp/files/2024/12/image-2.png)
+![](/assets/images/image-2.png)
 
 ### Public DNS Servers
 
