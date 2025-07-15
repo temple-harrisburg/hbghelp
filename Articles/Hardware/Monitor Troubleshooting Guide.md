@@ -13,9 +13,9 @@
       
     **If you don't see a second display** in the area highlighted below, but a second monitor is attached, skip to [**Troubleshooting a Second Monitor**](#troubleshooting-a-second-monitor).
 
-![](https://sites.temple.edu/hbghelp/files/2023/12/image-15.png)
+![](/assets/images/image-15.png)
 
-![](https://sites.temple.edu/hbghelp/files/2023/12/image-18-1024x796.png)
+![](/assets/images/image-18-1024x796.png)
 
 ### Change Monitor Orientation
 

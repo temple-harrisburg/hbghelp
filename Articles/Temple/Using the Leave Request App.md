@@ -25,4 +25,4 @@ Requests for the use of personal, vacation, and sick leave allotments should be 
 
 ## Workflow
 
-![](https://sites.temple.edu/hbghelp/files/2024/07/leave-request-diagram.png)
+![](/assets/images/leave-request-diagram.png)

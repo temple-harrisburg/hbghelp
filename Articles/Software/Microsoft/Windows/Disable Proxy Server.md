@@ -12,6 +12,6 @@ Temple computers are configured to use a proxy server by default. The Temple pro
 2. Toggle **Automatically detect settings** to "Off"
 3. If a proxy server in configured, disable it.
 
-![](https://sites.temple.edu/hbghelp/files/2024/09/image.png)
+![](/assets/images/image.png)
 
-![](https://sites.temple.edu/hbghelp/files/2024/09/image-1-1024x916.png)
+![](/assets/images/image-1-1024x916.png)
