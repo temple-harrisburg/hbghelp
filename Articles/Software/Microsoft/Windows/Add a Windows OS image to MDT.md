@@ -6,7 +6,7 @@ tags:
   - temple
   - deployment
   - windows10
-published: false
+public: false
 ---
 **EDIT 2025-05-29:** The deployment image is now managed by ITS at main. Adding and modifying images is no longer necessary.
 

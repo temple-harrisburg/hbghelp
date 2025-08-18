@@ -4,7 +4,7 @@ tags:
   - microsoft
   - windows11
   - internal
-published: false
+public: false
 ---
 This article goes over adding a domain user account as a local admin in order to elevate the domain user's privileges on a workstation. Parts of these directions are specific to the Temple University domain and will not apply to other domains.
 

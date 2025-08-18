@@ -2,7 +2,7 @@
 tags:
   - campus
   - tuh
-published: false
+public: false
 ---
 ### Access the Admin Menu
 

@@ -4,7 +4,7 @@ tags:
   - acrobat
   - pdf
   - forms
-published: true
+public: true
 ---
 There are many situations where you need a standardized form where recipients can input information digitally instead of on paper. PDF forms are perfect for these scenarios.
 
@@ -15,12 +15,12 @@ This article won't go into creating a form from scratch— it only focuses on ad
 1. Open Adobe Acrobat and open a PDF.
 2. In the 'Tools' Tab, select 'Prepare Form'
 
-![This image has an empty alt attribute; its file name is Pasted-image-20230309114804-1024x745.png](https://sites.temple.edu/hbghelp/files/2023/12/Pasted-image-20230309114804-1024x745.png)
+![This image has an empty alt attribute; its file name is Pasted-image-20230309114804-1024x745.png](/assets/images/Pasted-image-20230309114804-1024x745.png)
 
 3. Choose the PDF you want to turn into a form.
 4. Uncheck the box next to "Automatically detect Form fields," then click 'OK'
 
-![This image has an empty alt attribute; its file name is Pasted-image-20230309115053-1024x649.png](https://sites.temple.edu/hbghelp/files/2023/12/Pasted-image-20230309115053-1024x649.png)
+![This image has an empty alt attribute; its file name is Pasted-image-20230309115053-1024x649.png](/assets/images/Pasted-image-20230309115053-1024x649.png)
 
 5. Click 'Start'
 

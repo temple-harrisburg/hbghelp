@@ -3,7 +3,7 @@ tags:
   - network
   - access
   - public
-published: true
+public: true
 ---
 Accessing Wi-Fi at Temple Harrisburg requires two steps: 1) Getting a password from "tuguestwireless", then 2) signing in to "tusecurewireless".
 

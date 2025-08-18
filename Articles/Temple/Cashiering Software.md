@@ -7,7 +7,7 @@ tags:
   - network
   - hardware
   - software
-published: false
+public: false
 ---
 TUH's operations manager requires special software for financial operations. This software can only run successfully on a workstation that has a whitelisted hostname and static IP address. Only a workstation with the whitelisted IP and hostname can install the finance software.
 
@@ -37,12 +37,12 @@ Legacy software installers are available in the [Harrisburg SharePoint](https://
 1. Run the Epson EPOS 1.12 Installer
 2. Agree to EULA and select "User" setup method
 
-![](https://sites.temple.edu/hbghelp/files/2024/12/user.png)
+![](/assets/images/user.png)
 
 3. Select "USB" as the communication method.
 4. Finish installation
 
-![](https://sites.temple.edu/hbghelp/files/2024/12/usb12.png)
+![](/assets/images/usb12.png)
 
 ### 4. Set up Epson EPOS
 

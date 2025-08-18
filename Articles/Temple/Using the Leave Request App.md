@@ -3,7 +3,7 @@ tags:
   - tuh
   - temple
   - internal
-published: true
+public: true
 ---
 Requests for the use of personal, vacation, and sick leave allotments should be submitted to the operations manager through the [Leave Request App](https://tuprd.sharepoint.com/sites/hbg/SitePages/Leave-Request.aspx?source=https%3A%2F%2Ftuprd.sharepoint.com%2Fsites%2Fhbg%2FSitePages%2FForms%2FByAuthor.aspx) available on the Harrisburg SharePoint.
 
@@ -25,4 +25,4 @@ Requests for the use of personal, vacation, and sick leave allotments should be 
 
 ## Workflow
 
-![](https://sites.temple.edu/hbghelp/files/2024/07/leave-request-diagram.png)
+![](/assets/images/leave-request-diagram.png)

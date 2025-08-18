@@ -4,7 +4,7 @@ tags:
   - temple
   - access
   - mobile
-published: true
+public: true
 ---
 With the SAP Concur Mobile app, you're able to create expense reports and upload receipts directly from your smart phone. Follow these steps to sign in to the Concur mobile app.
 
@@ -15,11 +15,11 @@ With the SAP Concur Mobile app, you're able to create expense reports and upload
 3. In the top right corner of your Concur dashboard, click on the "User" icon
 4. Click on "Profile Settings"
 
-![](https://sites.temple.edu/hbghelp/files/2025/03/concur1-1024x257.png)
+![](/assets/images/concur1-1024x257.png)
 
 5. Click on "Concur Mobile Registration"
 
-![](https://sites.temple.edu/hbghelp/files/2025/03/concur2.png)
+![](/assets/images/concur2.png)
 
 6. Under "Sign-in IDs" you should see an email under "Username" consisting entirely of numbers. You will use this email address as your username in the mobile app.
 
