@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "3bca45945c8aaf2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "22f0087f02a3f44a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dffb11284a97748f",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".gitignore",
+                "bFile": ".gitignore",
+                "aRef": "HEAD",
+                "bRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: .gitignore"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "630d3a35c3675b34",
+    "type": "split",
+    "children": [
+      {
+        "id": "82cde2ec13fa170a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "104bd9ae3411cfec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d19268968b1a1df0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 323.5
+  },
+  "right": {
+    "id": "02a6475aba7f51f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "a268c20c7ad7b842",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e67c4dfc8bc13f4e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Documentation/Hardware/ThinkPad E15 Gen 3.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for ThinkPad E15 Gen 3"
+            }
+          },
+          {
+            "id": "08a35299caa8a698",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Documentation/Hardware/ThinkPad E15 Gen 3.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from ThinkPad E15 Gen 3"
+            }
+          },
+          {
+            "id": "979348ed65aa3570",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "38f4a8c45b769ba0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Documentation/Hardware/ThinkPad E15 Gen 3.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of ThinkPad E15 Gen 3"
+            }
+          },
+          {
+            "id": "e8932897b3ea7b75",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 380.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "dffb11284a97748f",
+  "lastOpenFiles": [
+    "Glossary/_Overview.md",
+    "Glossary/_General Software Terms.md",
+    "Glossary/_General Hardware Terms.md",
+    "Articles/Temple/Cashiering Software.md",
+    "Glossary/Xibo.md",
+    "Glossary/Windows Deployment Service.md",
+    "Glossary/Virtualization.md",
+    "Glossary/vapor.md",
+    "Glossary/Ubuntu-server.md",
+    "Glossary/Ubuntu.md",
+    "Glossary/Super User.md",
+    "Glossary/StackOverflow.md",
+    "Glossary/Semantic Versioning.md",
+    "Glossary/RSS.md",
+    "Glossary/RegEx.md",
+    "Glossary/Reddit.md",
+    "Glossary/PXE Boot.md",
+    "Glossary/Network Terms.md",
+    "Glossary/MDT.md",
+    "Glossary/hostname.md",
+    "Glossary/HBG-Server.md",
+    "Glossary/GDPR.md",
+    "Glossary/FOSS.md",
+    "Glossary/File Formats.md",
+    "Glossary/Drupal.md",
+    "Glossary/CMS.md",
+    "Glossary",
+    "Documentation/Hardware/Service History",
+    "_attachments/google_reading_mode.jpg",
+    "_attachments/expiring_onedrive_1.png",
+    "_attachments/firefox_settings.png",
+    "_attachments/expiring_onedrive_3.png",
+    "_attachments/expiring_onedrive_2.png",
+    "_attachments/edge_security_settings.png",
+    "_attachments/google_chrome_disallow_popups.png",
+    "Pasted image 20250721111958.png",
+    "Blog",
+    "Documentation/Hardware",
+    "Documentation",
+    "Articles",
+    "Articles/Software/Zoom",
+    "Documentation/TUH Microsite",
+    "Articles/Software/Microsoft/Windows",
+    "Articles/Software/Browsers"
+  ]
+}
