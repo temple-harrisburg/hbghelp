@@ -3,6 +3,7 @@ tags:
   - digital-signage
   - software
   - ubuntu-server
+  - depricated
 definition: A FOSS digital signage solution.
 ---
 # Definition

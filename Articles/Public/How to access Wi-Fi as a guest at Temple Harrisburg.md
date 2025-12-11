@@ -25,7 +25,7 @@ Once authenticated with the guest network, the credentials will be valid for 24 
 3. Check your wireless indicator to confirm you are now connected. 
 
 ### Troubleshooting
-
+- **If the form didn't open**: go to http://tuconnect.temple.edu/guest/temple-guest-registration.php
 - If prompted to select an authentication method, select **PEAP**, then select "Do Not Authenticate" for the certificate field.
-- Your phone number must be entered into tusecurewireless exactly as it was entered in the guest form.
+- Your phone number must be entered into tusecurewireless exactly as it was entered in the guest form, including hyphens.
 - If you are still experiencing connection issues, wait a few minutes and try again.  Sometimes it may take 5-10 minutes for your authentication to clear.

@@ -14,6 +14,7 @@ The Gefen EXT-UHD6000A-44 is a 4x4 HDMI matrix.
 
 1. [Gefen Syner-G](https://www.gefen.com/gefen-syner-g-software/) installed on a client computer
 2. A stand-alone router to connect the client computer and Gefen
+3. [Mozilla Firefox](https://www.firefox.com/) to access the Web GUI
 
 ### Access the web GUI
 
@@ -28,3 +29,8 @@ The Gefen EXT-UHD6000A-44 is a 4x4 HDMI matrix.
 9. Reboot the Gefen device for the changes to take effect.
 10. Once the Gefen device reboots and is detected in Gefen Syner-G, you should be able to access the web GUI through a browser at the Gefen device's IP
 11. The password for the Operator account is 'Operator'; for Administrator, 'Admin'.
+
+## Default Settings
+| Setting | Value        |
+| ------- | ------------ |
+| IP      | 192.168.1.72 |

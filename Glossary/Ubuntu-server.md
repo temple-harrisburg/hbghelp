@@ -2,6 +2,7 @@
 tags:
   - ubuntu
   - campus
+  - depricated
 definition: An Ubuntu virtual server running on HBG-server
 ---
 # Definition

@@ -8,18 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dffb11284a97748f",
+            "id": "7c6bf0bf0a7deb88",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".gitignore",
-                "bFile": ".gitignore",
-                "aRef": "HEAD",
-                "bRef": ""
+                "file": "Documentation/Hardware/Automation/Kramer Controller.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: .gitignore"
+              "icon": "lucide-file",
+              "title": "Kramer Controller"
+            }
+          },
+          {
+            "id": "8a4d749f73b3d0e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Articles/Software/Microsoft/Windows/Performance Issues.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Performance Issues"
             }
           }
         ]
@@ -133,13 +146,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documentation/Hardware/ThinkPad E15 Gen 3.md",
+                "file": "Documentation/Hardware/Automation/Kramer Controller.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ThinkPad E15 Gen 3"
+              "title": "Outline of Kramer Controller"
             }
           },
           {
@@ -153,65 +166,67 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 380.5
+    "width": 232.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dffb11284a97748f",
+  "active": "7c6bf0bf0a7deb88",
   "lastOpenFiles": [
+    "Articles/Software/Microsoft/Windows/Performance Issues.md",
+    "_attachments/Pasted image 20251014150249.png",
+    "Documentation/Hardware/Automation/Kramer Controller.md",
+    "Documentation/Hardware/Automation/Automation PC.md",
+    "Blog/TLS Crash Course.md",
+    "Documentation/Software",
+    "Documentation/Hardware/Gefen EXT-UHD6000A-44.md",
+    "Articles/Software/Microsoft/Create an Expiring OneDrive Link.md",
+    "Glossary/Reddit.md",
+    "Glossary/Xibo.md",
+    "Glossary/Ubuntu-server.md",
+    "Glossary/RegEx.md",
     "Glossary/_Overview.md",
     "Glossary/_General Software Terms.md",
     "Glossary/_General Hardware Terms.md",
-    "Articles/Temple/Cashiering Software.md",
-    "Glossary/Xibo.md",
-    "Glossary/Windows Deployment Service.md",
-    "Glossary/Virtualization.md",
-    "Glossary/vapor.md",
-    "Glossary/Ubuntu-server.md",
-    "Glossary/Ubuntu.md",
-    "Glossary/Super User.md",
-    "Glossary/StackOverflow.md",
-    "Glossary/Semantic Versioning.md",
-    "Glossary/RSS.md",
-    "Glossary/RegEx.md",
-    "Glossary/Reddit.md",
-    "Glossary/PXE Boot.md",
-    "Glossary/Network Terms.md",
-    "Glossary/MDT.md",
-    "Glossary/hostname.md",
-    "Glossary/HBG-Server.md",
-    "Glossary/GDPR.md",
-    "Glossary/FOSS.md",
-    "Glossary/File Formats.md",
-    "Glossary/Drupal.md",
-    "Glossary/CMS.md",
+    "Blog/Identifying Phishing Attempts.md",
+    "Blog/Dude, where's my cursor__ Using accessibility features on Windows 11.md",
+    "Blog/No, You Can't Just Download It Off Google__ Understanding Licensing and Sources for Free Images.md",
+    "Articles/Software/Microsoft/Windows/Unlock a computer locked by BitLocker.md",
+    "Articles/Software/Microsoft/Change your profile picture for Outlook.md",
+    "Articles/Hardware/Monitor Troubleshooting Guide.md",
+    "Documentation/Hardware/Automation/Automation PC.md~",
+    "Documentation/Hardware/Automation/4913",
+    "Documentation/Hardware/Automation/Automation PC.md",
+    "Documentation/Hardware/Automation",
+    "Articles/Software/Microsoft/Windows/Disable Proxy Server.md",
+    "Articles/Software/Microsoft/Windows/Join a remote computer to the TU domain.md",
+    "_attachments/Pasted image 20251014151124.png",
+    "_attachments/Pasted image 20251014150436.png",
+    "_attachments/Pasted image 20251014150403.png",
+    "_attachments/Pasted image 20251014150319.png",
+    "_attachments/Pasted image 20251014150256.png",
+    "Pasted image 20251014150218.png",
+    "Articles/Software/Microsoft/Windows/Check for updates on Windows 11.md",
+    "Articles/Public/How to access Wi-Fi as a guest at Temple Harrisburg.md",
+    "Articles/Software/Microsoft/Windows/Untitled",
+    "Blog/AI Basics.md",
+    "assets/images/Pasted-image-20230309131354.png",
+    "assets/images/Pasted-image-20230309132519-1024x257.png",
+    "assets/images/Pasted-image-20230309133128.png",
+    "assets/images",
+    "assets",
     "Glossary",
     "Documentation/Hardware/Service History",
-    "_attachments/google_reading_mode.jpg",
-    "_attachments/expiring_onedrive_1.png",
-    "_attachments/firefox_settings.png",
-    "_attachments/expiring_onedrive_3.png",
-    "_attachments/expiring_onedrive_2.png",
-    "_attachments/edge_security_settings.png",
-    "_attachments/google_chrome_disallow_popups.png",
-    "Pasted image 20250721111958.png",
-    "Blog",
-    "Documentation/Hardware",
-    "Documentation",
-    "Articles",
-    "Articles/Software/Zoom",
-    "Documentation/TUH Microsite",
-    "Articles/Software/Microsoft/Windows",
-    "Articles/Software/Browsers"
+    "Blog"
   ]
 }
