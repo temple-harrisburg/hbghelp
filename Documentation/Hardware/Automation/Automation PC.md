@@ -7,127 +7,131 @@ public: false
 ---
 The automation PC runs Debian with a minimal GUI. Chromium is launched automatically to open the Kramer Controller 
 
-# Settings
-## Network
-The device is configured with a static IP address in order to interface with the [[Documentation/Hardware/Automation/Kramer Controller|Kramer controller]]. 
+# 0. Create Custom Debian Image
+Files for the custom installer used for Temple Harrisburg's automation controllers and digital signage are available at [`temple-harrisburg/custom-debian`](https://github.com/temple-harrisburg/custom-debian) on GitHub. Follow direction there to create a custom Debian image.
 
-### Configuration
-Network configuration is located in `/etc/network/interfaces`.
+See [[Create a custom Debian image]] for more general instruction on pre-seeding a Debian installation.
 
-```
+Skip to [[#1. Installation|step 1]] if you already have an image
+# 1. Installation
+1. Burn custom Debian ISO to usb (if one does not already exist)
+2. Insert into target machine
+3. Boot using target machine BIOS's temporary boot device menu
+Refer to [[General OS Installation Troubleshooting]] for troubleshooting
 
-```
+# 2. Details
 
-### Restart network daemon
+## Stack
+- Debian 13
+- Xorg (display server)
+- LightDM (display manager)
+- Openbox (window manager)
+- Chromium
+## Scripts
+These scripts are involved in the setup and execution of the automation controller GUI
+- `~/setup.sh`
+- `~/start_interface.sh`
+- `~/.kramer_config`
+- `~/.config/openbox/environment`
+- `~/.config/openbox/autostart`
+- `~/.config/openbox/rc.xml`
+
+### `~/setup.sh`
+Symlinked to `/usr/bin/setup`
+
+An interactive script to set the host computer's static IP and the URL of the Kramer Controller web interface. Runs on first startup.
+
+
+### `~/start_interface.sh`
+Symlinked to `/usr/bin/start_interface`
+
+A script to load the variables in `~/.kramer_config` and start Chromium in kiosk mode
+
+### `~/.kramer_config`
+
+>[!warning]
+> Syntax errors in this file will cause [[#After logging in, the screen goes straight back to the login screen.|Openbox to fail to start]].
+
+This file saves variables related to starting the Kramer GUI interface.
+
+This file is overwritten by [[#`~/setup.sh`|~/setup.sh]]
+
+If  `~/.kramer_config` exists, its variables are loaded by `~/.config/openbox/environment` on start. This also means that if there is a syntax error in `~/.kramer_config`, [[#After logging in, it goes straight back to the login screen.|Openbox will fail to start]].
+
+### `~/.config/openbox/environment`
+
+>[!warning]
+> Syntax errors in this file will cause [[#After logging in, the screen goes straight back to the login screen.|Openbox to fail to start]].
+
+Variables loaded when Openbox starts. The default location of the Kramer config file is defined here.
+
 ```sh
-sudo systemctl restart systemd-networkd
+#!/usr/bin/env bash
+export CONFIG_FILE="${CONFIG_FILE:="${HOME}/.kramer_config"}"
+
+# Variables for automation controller
+if [ -f "$CONFIG_FILE" ]; then
+    . "$CONFIG_FILE" 
+fi
 ```
 
-# Troubleshooting
-## Open a terminal
+### `~/.config/openbox/autostart`
+Run either the interactive setup script or start the Chromium interface. 
+
+`SKIP_SETUP` is set by [[#`~/setup.sh`|~/setup.sh]]. 
+
+```sh
+#!/usr/bin/env bash
+# 
+# $HOME/.config/openbox/autostart
+# 
+# This runs when the kiosk user logs in. If 
+# the machine is configured to log in automatically,
+# it executes on startup. SKIP_SETUP is unset when
+# the machine first 
+
+if [ "${SKIP_SETUP:-0}" -lt 1 ]; then 
+    zutty -T "Kiosk Setup" -e "$(realpath ~/setup.sh)"
+else
+    start_interface
+fi
+```
+
+### `~/.config/openbox/rc.xml`
+Configuration for the Openbox interface. The only modifications to this file are the following keyboard shortcuts:
+- `Win + E` - Launch PCManFM
+- `Ctrl + Alt + T` - Start Terminal
+- `Ctrl + Alt + Del` - Exit Openbox (with prompt)
+
+
+# 3. Troubleshooting
+## Exit GUI to terminal
+If Openbox doesn't launch, you can enter a terminal session with `Ctrl + Alt + F1` from the login window.
+
+## Opening a terminal
+### ...with keyboard shortcut
+If the custom Debian installer was used, the Openbox menu config at `~/.config/openbox/rc.xml` adds a custom keyboard shortcut for starting the graphical terminal emulator:
+1. Press `Ctrl`+`Alt`+`T`
+### ...with mouse
+If the custom Openbox config files failed to copy _or_ Openbox fails to load them, the graphical terminal emulator needs to be opened from the context menu:
 1. Connect a mouse and keyboard to the device
 2. Use `Ctrl+Alt+Arrow Keys` to change to a different desktop
 3. Right-click with the mouse on the blank desktop to open the context menu
 4. Click "Terminal Emulator"
 
-# Configure a Debian machine for kiosk usage
-## 1. Install `lightdm`, `openbox`, and `x-org`
-1. Install prerequisites[^1]
-	- `openbox` is a minimal window manager
-	- `x-org` is the display server
-	- `lightdm` is the display manager
-	- `chromium` is used to display the web page opened by the `autostart` script in step [[#2.2 `openbox`|2.2]].
 
-```sh ln:false
-sudo apt update
-sudo apt install xorg openbox lightdm chromium
-```
-## 2. Configure
-### 2.1 `lightdm`
-1. Overwrite the contents of `/etc/lightdm/lightdm.confg`:
-```toml 
-[SeaDefaults]
-autologin-user=kiosk-user
-user-session=openbox
-```
+## Chrome doesn't launch on start
+1. Check the permissions on `~/.config/openbox/autostart`.
+2. Check for syntax errors in `~/.config/openbox/autostart`. 
 
-### 2.2 `openbox`
-1. Create `~/.config/openbox/autostart.sh`. This will run when the user session starts.[^2][^3]
-```sh
-# Configuration
-WEBSITE_URL="https://PUT_YOUR_WEBSITE_ADDRESS_HERE"
-XDG_CONFIG_HOME=/tmp/.chromium
-XDG_CONFIG_CACHE=/tmp/.chromium
+## Chrome launches in the the 'New Tab' page
+The `KRAMER_IP` variable is unset or set incorrectly. Check `~/.kramer_config` and `~/.config/openbox/environment`. Confirm that `~/setup.sh` sets the variable correctly.
 
-# Disable screensaver, screen blanking, and power management
-xset +dpms
-xset dpms 300 1200 3600 # Standby: 5m; Suspend: 20m; Power-off: 1hr
+## After logging in, the screen goes straight back to the login screen.
+Check these files for syntax errors:
+- `~/.kramer_config`
+- `~/.config/openbox/environment`
 
-# Auto-detect screen resolution
-RESOLUTION=$(xrandr 2>/dev/null | grep '*' | awk '{print $1}')
-if [ -z "$RESOLUTION" ]; then
-    RESOLUTION="1920x1080"  # Default fallback can be ="1280x720"
-fi
-SCREEN_WIDTH=$(echo $RESOLUTION | cut -d 'x' -f1)
-SCREEN_HEIGHT=$(echo $RESOLUTION | cut -d 'x' -f2)
-
-echo "Detected screen resolution: ${SCREEN_WIDTH}x${SCREEN_HEIGHT}"
-
-# Check internet connection using ping before launching Chromium
-if ping -c 1 -W 2 google.com >/dev/null 2>&1; then
-    echo "Internet connected. Proceeding with Chromium launch."
-else
-    echo "No internet connection detected. Exiting."
-fi
-
-# Allow quitting the X server with CTRL-ALT-Backspace
-# setxkbmap -option terminate:ctrl_alt_bksp
-
-# Prevent Chromium restore prompts
-sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' ~/.config/chromium/'Local State'
-sed -i 's/"exit_type":"[^"]\+"/"exit_type":"Normal"/' ~/.config/chromium/Default/Preferences
-
-# Clean up Chromium cache, cookies, and logs
-find ~/.config/chromium/Default/ -type f \( -name "Cookies" -o -name "History" -o -name "*.log" -o -name "*.ldb" -o -name "*.sqlite" \) -delete
-rm -rf ~/.config/chromium/Default/Logs/*
-
-# Clear system logs
-sudo journalctl --vacuum-time=1d
-sudo find /var/log -type f \( -name "*.log" -o -name "*.gz" -o -name "*.1" \) -delete
-sudo truncate -s 0 /var/log/syslog /var/log/dmesg
-
-# Kill any existing Chromium instances
-pkill -9 chromium 2>/dev/null
-pkill -9 chrome 2>/dev/null
-
-# Start Chromium in kiosk mode
-chromium --kiosk --disable-gpu --noerrdialogs --disable-infobars --disable-features=TranslateUI \
-    --disable-session-crashed-bubble --no-sandbox --disable-notifications --disable-sync-preferences \
-    --disable-background-mode --disable-popup-blocking --no-first-run \
-    --enable-gpu-rasterization --disable-translate --disable-logging --disable-default-apps \
-    --disable-extensions --disable-crash-reporter --disable-pdf-extension --disable-new-tab-first-run \
-    --disable-dev-shm-usage --start-maximized --mute-audio --disable-crashpad --hide-scrollbars \
-    --ash-hide-cursor --memory-pressure-off --force-device-scale-factor=1 --window-position=0,0 \
-    --window-size=${SCREEN_WIDTH},${SCREEN_HEIGHT} "$WEBSITE_URL" &
-
-if [ $? -eq 0 ]; then
-    echo "Chromium started successfully."
-else
-    echo "Failed to start Chromium."
-    sudo reboot
-fi
-```
-
-## 3. Resources
-[Openbox Autostart docs](https://openbox.org/help/Autostart)
-[Debian Fullscreen GUI Kiosk - Will Haley](https://www.willhaley.com/blog/debian-fullscreen-gui-kiosk/)
-[How to run Chromium in kiosk mode on a Raspberry Pi 2025](https://gist.github.com/lellky/673d84260dfa26fa9b57287e0f67d09e)
-
----
-[^1]: https://www.willhaley.com/blog/debian-fullscreen-gui-kiosk/
-[^2]: [How to run Chromium in kiosk mode on a Raspberry Pi 2025](https://gist.github.com/lellky/673d84260dfa26fa9b57287e0f67d09e)
-[^3]: For some reason `chromium` will crash if the following environment variables aren't set: 
-- `XDG_CONFIG_HOME=/tmp/.chromium`
-- `XDG_CONFIG_CACHE=/tmp/.chromium`
-
-
+A missing closing quotation mark (for example) can cause the X display server and Openbox to fail to start. Check the log files:
+- `/var/log/Xorg.0.log`
+- `~/.local/share/xorg`
