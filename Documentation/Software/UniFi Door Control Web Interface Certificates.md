@@ -21,6 +21,7 @@ Microsoft's [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/inst
    **Hosts**: `unifi.local`
    **Comment**: `Unifi Door System`
 4. Click 'Add'
+
 ![[Pasted image 20260421114726.png]]
 
 ## 2. Import UniFi Self-Signed Certificate
