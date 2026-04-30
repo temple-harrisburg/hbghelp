@@ -4,7 +4,7 @@ public: true
 The UniFi door system server issues a self-signed certificate. The web interface can function without having the self-signed certificate installed in the Root certificate store, but using the web interface then requires the additional step of manually proceeding to the 'unsafe' site.
 
 ## 1. Edit the hosts file
-The hosts file is located at `C:\Windows\System32\drivers\etc`. The host file stores a list of IP addresses and their associated hostname. The hosts file has been largely supplanted by DHCP, but it's useful for niche scenarios and developers.
+The hosts file is located at `C:\Windows\System32\drivers\etc\hosts`. The host file stores a list of IP addresses and their associated hostname. The hosts file has been largely supplanted by DHCP, but it's useful for niche scenarios and developers.
 ### ...with notepad
 Open the hosts file in notepad and add the following line to the bottom:
 ```
